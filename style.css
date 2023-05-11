@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #3cb371;
+    --second-color: #00fa9a;
+    --therth-color: #c71585;
+    --quarth-color: #191970;
+    --fiveth-color: #f5fffa;
+    --sixth-color: #25d366;
+
+}
+
+body {
+    background-image: url('images/img_fundo_03.jfif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#container {    
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--therth-color);
+}
+
+#logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 30px;
+}
+
+#logo img {
+    width: 100px;
+    border-radius: 50%;
+}
+
+#logo span {
+    font-size: 20px;
+    color: var(--quarth-color);
+}
+
+#btn {
+    background-color: var(--quarth-color);
+    border-radius: 10px;
+    margin-right: 30px;
+}
+
+.btn_button {
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: var(--fiveth-color);
+    border: none;
+    background: var(--quarth-color);
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.whatsapp-link  i{
+    color: var(--fiveth-color);
+    background-color: var(--sixth-color);
+    margin: 8px;
+    font-size: 25px;
+    width: 40px;
+    border-radius: 50%;
+    padding: 7px;
+    text-align: center;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: var(--quarth-color);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 60px;
+}
+
+.navbar a {
+float: left;
+font-size: 18px;
+color: var(--sixth-color);
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+
+.dropdown {
+float: left;
+overflow: hidden;
+}
+
+.dropdown .dropbtn {
+font-size: 18px;  
+border: none;
+outline: none;
+color: var(--sixth-color);
+padding: 14px 16px;
+background-color: inherit;
+font-family: inherit;
+margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+background-color: var(--primary-color);
+color: var(--quarth-color);
+border: 2px solid var(--fiveth-color);
+border-radius: 10px;
+}
+
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: var(--quarth-color);
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+
+.dropdown-content:hover {
+    border-radius: 0px 0px 10px 10px;
+}
+
+.dropdown-content a {
+float: none;
+color: var(--sixth-color);
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+text-align: left;
+}
+
+.dropdown-content a:hover {
+background-color: var(--fiveth-color);
+border: 2px solid var(--therth-color);
+}
+
+.dropdown:hover .dropdown-content {
+display: block;
+}
+
+/*MAIN*/
+#span {
+    float: left;
+    margin-left: 30px;
+}
+
+#span a{
+    text-decoration: none;
+}
