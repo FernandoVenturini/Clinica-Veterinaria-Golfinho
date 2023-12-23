@@ -4,159 +4,411 @@
     box-sizing: border-box;
 }
 
-:root {
-    --primary-color: #3cb371;
-    --second-color: #00fa9a;
-    --therth-color: #c71585;
-    --quarth-color: #191970;
-    --fiveth-color: #f5fffa;
-    --sixth-color: #25d366;
-
-}
-
 body {
-    background-image: url('images/img_fundo_03.jfif');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Opens Sans', sans-serif;
+    height: 100vh;
+    background: #ccc !important;
 }
 
 #container {    
     width: 100%;
-    height: auto;
+    height: 200px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    background-color: var(--therth-color);
+    background: #006D77;
+    border-radius: 5px; 
 }
 
-#logo {
+.logo {
+    width: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #006D77;
+}
+
+.logo img {
+    width: 115px;
+    border-radius: 50%;
+    position: absolute;
+    padding-bottom: 5px;
+}
+
+span{
+    position: absolute;
+    transform-origin: 0 80px;
+}
+
+.text{
+    height: 160px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #57cc99;
+    background: #57cc99;
+    animation: animate 30s linear infinite;
+}
+@keyframes animate{
+    from {
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.middle{
+    border: 1px solid #38a3a5;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.container_middle-1 {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    color: #c7f9cc;
+}
+
+.container_middle_button {
+    text-align: center;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.btn-agendar{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-left: 30px;
+    width: 300px;
+    padding: 5px;
 }
 
-#logo img {
-    width: 100px;
-    border-radius: 50%;
-}
-
-#logo span {
-    font-size: 20px;
-    color: var(--quarth-color);
-}
-
-#btn {
-    background-color: var(--quarth-color);
-    border-radius: 10px;
-    margin-right: 30px;
-}
-
-.btn_button {
+.btn-agendar .btn{
+    display: flex;
     justify-content: center;
     align-items: center;
-    text-decoration: none;
-    color: var(--fiveth-color);
-    border: none;
-    background: var(--quarth-color);
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    padding: 10px;
+    text-align: center;
+    border: 1px solid #57cc99;
+    margin: .3rem;
+    background: #22577a;
 }
 
-.whatsapp-link  i{
-    color: var(--fiveth-color);
-    background-color: var(--sixth-color);
-    margin: 8px;
-    font-size: 25px;
-    width: 40px;
-    border-radius: 50%;
-    padding: 7px;
+.btn-agendar .btn:hover{
+    cursor: pointer;
+    background: #38a3a5;
+    box-shadow: 0px 0px 5px 5px #ffffff;
+}
+
+.btn .icon {
+    color: #57cc99;
+}
+
+.btn h3{
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
     text-align: center;
 }
 
-.navbar {
-    overflow: hidden;
-    background-color: var(--quarth-color);
+.btn h3:hover{
+    color: #22577a;
+}
+
+.menu {
+    text-align: center;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
-    height: 60px;
+    margin-top: 1rem;
+}
+.menu li {
+    width: 8%;
+    list-style: none;
+    display: inline-block;
+}
+.menu a{
+    text-decoration: none;
+    color: #22577a;
+    padding: 10px;
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.menu a:hover{
+    background-color: #22577a;
+    color: #fff;
+    border-radius: 5px;
 }
 
-.navbar a {
-float: left;
-font-size: 18px;
-color: var(--sixth-color);
-text-align: center;
-padding: 14px 16px;
-text-decoration: none;
-}
-
-.dropdown {
-float: left;
-overflow: hidden;
-}
-
-.dropdown .dropbtn {
-font-size: 18px;  
-border: none;
-outline: none;
-color: var(--sixth-color);
-padding: 14px 16px;
-background-color: inherit;
-font-family: inherit;
-margin: 0;
-}
-
-.navbar a:hover, .dropdown:hover .dropbtn {
-background-color: var(--primary-color);
-color: var(--quarth-color);
-border: 2px solid var(--fiveth-color);
-border-radius: 10px;
-}
-
-.dropdown-content {
-display: none;
-position: absolute;
-background-color: var(--quarth-color);
-min-width: 160px;
-box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-z-index: 1;
-}
-
-.dropdown-content:hover {
-    border-radius: 0px 0px 10px 10px;
-}
-
-.dropdown-content a {
-float: none;
-color: var(--sixth-color);
-padding: 12px 16px;
-text-decoration: none;
-display: block;
-text-align: left;
-}
-
-.dropdown-content a:hover {
-background-color: var(--fiveth-color);
-border: 2px solid var(--therth-color);
-}
-
-.dropdown:hover .dropdown-content {
-display: block;
+.burguer{
+    display: none;
 }
 
 /*MAIN*/
-#span {
-    float: left;
-    margin-left: 30px;
+#demo {
+    width: 100%;
+    margin: auto;
+}
+.carousel-item img {
+    width: 60%;
+    height: 400px;
+    margin: 30px auto 10px auto;
+    border-radius: 5px;
+}
+.carousel-indicators{
+    background: none;
+}
+.carousel-control-prev-icon, .carousel-control-next-icon{
+    border-radius: 50%;
+}
+section {
+    width: 90%;
+    margin: 50px auto;
+    text-indent: 20px;
+    text-align: justify;
+}
+.section-inicio{
+    text-align: center;
+    color: #22577a;
+}
+.section-inicio {
+    width: 90%;
+    margin: 2rem auto;
+    line-height: 1.6;
+}
+.section-destaque, .section-servicos, .section-agendamento, .section-noticias, .section-contato, .section-missao{
+    border: 1px solid #22577a;
+    padding: 10px;
+    border-radius: 10px;
+}
+.section-destaque h3, .section-servicos h3, .section-agendamento h3, .section-noticias h3, .section-contato h3, .section-missao h3{
+    color: #fff;
+    font-weight: bold;
+    background-color: #006D77;
+    padding: 10px;
+    border-radius: 5px;
+}
+.section-destaque h5, .section-servicos h5, .section-agendamento h5, .section-noticias h5, .section-contato h5{
+    color: #22577a;
+}
+.section-destaque p, .section-servicos p, .section-agendamento p, .section-noticias p, .section-contato p, .section-missao p{
+    color: #00000080;
+    line-height: 1.6;
+}
+.section-servicos li{
+    color: #00000080;
+}
+.sobre{
+    width: 90%;
+    margin: auto;
+    text-align: justify;
+    border: 1px solid #22577a;
+    padding: 20px;
+    margin-top: 3rem;
+    border-radius: 10px;
+}
+.btn-consulta{
+    width: 30%;
+    border-radius: 5px;
+    border: 3px solid #38a3a5;
+    background-color: #22577a;
+    color: #fff;
+    font-size: 30px;
+    margin: 2rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+}
+.btn-consulta:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 5px 5px #38a3a5;
+}
+.btn-consulta-1{
+    width: 150px;
+    padding: 3px;
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 10px;
+    border: 3px solid #38a3a5;
+    background-color: #22577a;
+    color: #fff;
+    font-weight: 600;
+    margin-left: 1rem;
+}
+.btn-consulta-1:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 5px 5px #38a3a5;
+}
+.btn-agenda{
+    display: flex;
+}
+.bloco{
+    border: 1px solid #22577a;
+    padding: 10px;
+    border-radius: 10px;
+}
+.bloco h3{
+    color: #22577a;
+    font-weight: bold;
+}
+.bloco p{
+    color: #00000080;
+    line-height: 1.6;
+}
+.bloco .btn{
+    width: fit-content;
+    display: block;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid #38a3a5;
+    margin-left: auto;
+    text-align: center;
+    padding: 6px;
+    background-color: #22577a;
+}
+.bloco .btn:hover{
+    background-color: #006D77;
+    color: #fff;
+    border: 2px solid #22577a;
+    font-weight: bold;
+}
+form{
+    border: 1px solid #22577a;
+    border-radius: 10px;
+    padding: 30px;
+    width: 75%;
+    height: auto;
+    margin: 3rem auto;
+    display: flex;
+    flex-direction: column;
+    background: #ccc;
+}
+.form label{
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.5);
+}
+.form input{
+    border-radius: 5px;
+    height: 35px;
+    border: none;
+    padding: 5px;
+    margin-bottom: 1rem;
+}
+.btn-form{
+    width: 150px;
+    display: block;
+    padding: 6px;
+    margin: auto;
+    border-radius: 10px;
+    border: 2px solid #22577a;
+    background-color: #38a3a5;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+}
+.btn-form:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 5px 5px #38a3a5;
+    background-color: #22577a;
+}
+.form textarea{
+    height: 100px;
+    border-radius: 10px;
+    border: none;
+    padding: 5px;
 }
 
-#span a{
-    text-decoration: none;
+footer{
+    background-color: #006D77;
+    text-align: center;
+    padding: 30px;
+    color: #ffffff;
+    text-shadow: 2px 2px 2px #000;
+    letter-spacing: 2px;
+}
+
+/*RESPONSIVO*/
+@media only screen and (max-width:600px){
+    #container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    .items{
+        width: 100%;
+    }
+    .burguer{
+        background-color: #57cc99;
+        display: block;
+        text-align: center;
+        width: 100%;
+        height: 30px;
+    }
+    .logo{
+        margin-top: 1rem;
+    }
+    .middle{
+        width: 90%;
+    }
+    #nav-menu, .slide{
+        display: none;
+    }
+    .btn-consulta-1{
+        margin: auto;
+    }
+    .section-inicio h3, .section-destaque h3, .section-servicos h3, .section-agendamento h3, .section-noticias h3, .section-contato h3, h5{
+        text-align: center;
+    }
+    .btn-consulta{
+        width: 40%;
+        font-size: 18px;
+    }
+}
+
+@media only screen and (min-width:601px) and (max-width:900px){
+    #container{
+        width: 100%;
+    }
+    .middle{
+        width: 50%;
+        border: none;
+    }
+    .btn-agendar{
+        width:30%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+    .btn{
+        width: 75%;
+        height: 40px;
+    }
+    .btn .icon{
+        width: 35px;
+    }
+    .btn h3{
+        font-size: 9px;
+    }
+    .middle{
+        width: 45%;
+    }
+    .middle h3{
+        font-size: 22px;
+    }
 }
