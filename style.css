@@ -419,13 +419,12 @@ footer{
         margin-bottom: 1rem;
     }
     .btn-consulta{
-        width: 42%;
+        width: 40%;
         margin: 0 auto;
     }
     .btn-consulta a{
-        font-size: 22px;
-        display: flex;
-        align-items: center;
+        font-size: 20px;
+        text-align: center;
     }
     .btn-form{
         margin-bottom: 2rem;
@@ -443,10 +442,35 @@ footer{
 @media only screen and (min-width:601px) and (max-width:900px){
     #container{
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    .items{
+        width: 100%;
+    }
+    .burguer{
+        background-color: #57cc99;
+        display: block;
+        text-align: center;
+        width: 100%;
+        height: 30px;
+    }
+    .logo{
+        margin-top: 1rem;
     }
     .middle{
-        width: 50%;
-        border: none;
+        width: 90%;
+        margin-bottom: 1rem;
+    }
+    #nav-menu, .slide{
+        display: none;
+    }
+    .btn-consulta-1{
+        margin: auto;
+    }
+    .section-inicio h3, .section-missao, .section-destaque h3, .section-servicos h3, .section-agendamento h3, .section-noticias h3, .section-contato h3, h5{
+        text-align: center;
     }
     .btn-agendar{
         width:30%;
@@ -471,5 +495,13 @@ footer{
     }
     .middle h3{
         font-size: 22px;
+    }
+    .btn-consulta{
+        width: 40%;
+        height: 10vh;
+    }
+    .btn-consulta a{
+        font-size: 22px;
+        text-align: center;
     }
 }
