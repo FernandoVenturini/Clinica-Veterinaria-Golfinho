@@ -390,6 +390,7 @@ footer{
     }
     .middle{
         width: 90%;
+        margin-bottom: 1rem;
     }
     #nav-menu, .slide{
         display: none;
@@ -413,6 +414,20 @@ footer{
     .menu a{
         background-color: #c1bebe;
         display: block;
+    }
+    .btn-agendar{
+        margin-bottom: 1rem;
+    }
+    .btn-consulta{
+        width: 42%;
+        margin: 0 auto;
+    }
+    .btn-consulta a{
+        font-size: 22px;
+        display: block;
+    }
+    .btn-form{
+        margin-bottom: 2rem;
     }
     footer{
         text-align: center;
