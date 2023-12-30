@@ -424,7 +424,8 @@ footer{
     }
     .btn-consulta a{
         font-size: 22px;
-        display: block;
+        display: flex;
+        align-items: center;
     }
     .btn-form{
         margin-bottom: 2rem;
