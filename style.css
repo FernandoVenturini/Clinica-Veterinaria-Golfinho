@@ -12,7 +12,7 @@ body {
 
 #container {    
     width: 100%;
-    height: 200px;
+    height: 30vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -61,10 +61,12 @@ span{
     border: 1px solid #38a3a5;
     padding: 20px;
     border-radius: 10px;
+    width: 50%;
+    box-shadow: 0 3px 3px 3px #fff;
 }
 
 .container_middle-1 {
-    font-size: 32px;
+    font-size: 42px;
     font-weight: bold;
     text-align: center;
     color: #c7f9cc;
@@ -77,12 +79,8 @@ span{
 }
 
 .btn-agendar{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 300px;
-    padding: 5px;
+    display: inline-block;
+    width: 250px;
 }
 
 .btn-agendar .btn{
@@ -90,9 +88,10 @@ span{
     justify-content: center;
     align-items: center;
     text-align: center;
-    border: 1px solid #57cc99;
-    margin: .3rem;
+    border: 3px solid #57cc99;
     background: #22577a;
+    padding: 6px;
+    margin-top: .5rem;
 }
 
 .btn-agendar .btn:hover{
@@ -100,9 +99,15 @@ span{
     background: #38a3a5;
     box-shadow: 0px 0px 5px 5px #ffffff;
 }
+.btn a{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .btn .icon {
-    color: #57cc99;
+    float: left;
 }
 
 .btn h3{
@@ -112,6 +117,8 @@ span{
     font-size: 20px;
     text-transform: uppercase;
     text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
 .btn h3:hover{
@@ -155,7 +162,7 @@ span{
     margin: auto;
 }
 .carousel-item img {
-    width: 60%;
+    width: 40%;
     height: 400px;
     margin: 30px auto 10px auto;
     border-radius: 5px;
@@ -179,7 +186,9 @@ section {
 .section-inicio {
     width: 90%;
     margin: 2rem auto;
-    line-height: 1.6;
+}
+.section-inicio h4{
+    line-height: 2;
 }
 .section-destaque, .section-servicos, .section-agendamento, .section-noticias, .section-contato, .section-missao{
     border: 1px solid #22577a;
@@ -196,6 +205,13 @@ section {
 .section-destaque h5, .section-servicos h5, .section-agendamento h5, .section-noticias h5, .section-contato h5{
     color: #22577a;
 }
+.btn-consulta-1 a{
+    text-decoration: none;
+    color: #fff;
+}
+.btn-consulta-1 a:hover{
+    color: #57cc99;
+}
 .section-destaque p, .section-servicos p, .section-agendamento p, .section-noticias p, .section-contato p, .section-missao p{
     color: #00000080;
     line-height: 1.6;
@@ -205,7 +221,7 @@ section {
 }
 .sobre{
     width: 90%;
-    margin: auto;
+    margin: 0 auto 2rem;
     text-align: justify;
     border: 1px solid #22577a;
     padding: 20px;
@@ -213,11 +229,11 @@ section {
     border-radius: 10px;
 }
 .btn-consulta{
-    width: 30%;
-    border-radius: 5px;
+    width: 25%;
+    height: 75px;
+    border-radius: 10px;
     border: 3px solid #38a3a5;
     background-color: #22577a;
-    color: #fff;
     font-size: 30px;
     margin: 2rem auto;
     display: flex;
@@ -225,11 +241,22 @@ section {
     align-items: center;
     text-align: center;
     font-weight: bold;
-    padding: 10px;
 }
 .btn-consulta:hover{
     cursor: pointer;
     box-shadow: 0px 0px 5px 5px #38a3a5;
+}
+.btn-consulta a{
+    text-decoration: none;
+    color: #fff;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-consulta a:hover{
+    color: #57cc99;
 }
 .btn-consulta-1{
     width: 150px;
@@ -251,6 +278,7 @@ section {
 }
 .btn-agenda{
     display: flex;
+    margin-bottom: 3rem;
 }
 .bloco{
     border: 1px solid #22577a;
@@ -370,12 +398,34 @@ footer{
     .btn-consulta-1{
         margin: auto;
     }
-    .section-inicio h3, .section-destaque h3, .section-servicos h3, .section-agendamento h3, .section-noticias h3, .section-contato h3, h5{
+    .section-inicio h3, .section-missao, .section-destaque h3, .section-servicos h3, .section-agendamento h3, .section-noticias h3, .section-contato h3, h5{
         text-align: center;
     }
     .btn-consulta{
         width: 40%;
-        font-size: 18px;
+        font-size: 26px;
+    }
+    .menu{
+        text-align: center;
+        padding-left: 0;
+    }
+    .menu li{
+        list-style: none;
+        display: inline-block;
+        padding: 0;
+        width: 25%;
+    }
+    .menu a{
+        background-color: #c1bebe;
+        display: block;
+    }
+    footer{
+        text-align: center;
+        font-size: 12px;
+    }
+    footer p{
+        width: 60%;
+        margin: auto;
     }
 }
 
