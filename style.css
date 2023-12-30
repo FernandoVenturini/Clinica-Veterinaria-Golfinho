@@ -228,7 +228,7 @@ section {
     border-radius: 10px;
 }
 .btn-consulta{
-    width: 25%;
+    width: 35%;
     height: 75px;
     border-radius: 10px;
     border: 3px solid #38a3a5;
@@ -399,10 +399,6 @@ footer{
     }
     .section-inicio h3, .section-missao, .section-destaque h3, .section-servicos h3, .section-agendamento h3, .section-noticias h3, .section-contato h3, h5{
         text-align: center;
-    }
-    .btn-consulta{
-        width: 40%;
-        font-size: 26px;
     }
     .menu{
         text-align: center;
