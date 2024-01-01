@@ -312,6 +312,17 @@ section {
     border: 2px solid #22577a;
     font-weight: bold;
 }
+.map {
+    margin-bottom: 5rem;
+}
+.map h2 {
+    text-align: center;
+    color: #006D77;
+    font-weight: bold;
+    font-size: 60px;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+}
 form{
     border: 1px solid #22577a;
     border-radius: 10px;
