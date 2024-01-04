@@ -6,10 +6,8 @@
 
 body {
     font-family: 'Opens Sans', sans-serif;
-    height: 100vh;
-    background: #ccc !important;
+    background: linear-gradient(white, #a7dbab) !important;
 }
-
 #container {    
     width: 100%;
     height: 30vh;
@@ -87,7 +85,7 @@ span{
     justify-content: center;
     align-items: center;
     text-align: center;
-    border: 3px solid #57cc99;
+    border: 3px solid #ff6b6b;
     background: #22577a;
     padding: 6px;
     margin-top: .5rem;
@@ -97,6 +95,7 @@ span{
     cursor: pointer;
     background: #38a3a5;
     box-shadow: 0px 0px 5px 5px #ffffff;
+    border: 3px solid #ff6b6b;
 }
 .btn a{
     text-decoration: none;
@@ -129,7 +128,7 @@ span{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 1rem;
+    margin: 1rem;
 }
 .menu li {
     width: 8%;
@@ -209,7 +208,7 @@ section {
     color: #fff;
 }
 .btn-consulta-1 a:hover{
-    color: #57cc99;
+    color: #ff6b6b;
 }
 .section-destaque p, .section-servicos p, .section-agendamento p, .section-noticias p, .section-contato p, .section-missao p{
     color: #00000080;
@@ -243,7 +242,8 @@ section {
 }
 .btn-consulta:hover{
     cursor: pointer;
-    box-shadow: 0px 0px 5px 5px #38a3a5;
+    box-shadow: 0px 0px 5px 5px #fff;
+    border: 3px solid #ff6b6b;
 }
 .btn-consulta a{
     text-decoration: none;
@@ -339,7 +339,7 @@ form{
     margin: 3rem auto;
     display: flex;
     flex-direction: column;
-    background: #ccc;
+    background: linear-gradient(white, #5dad8b);
 }
 .form label{
     font-weight: bold;
